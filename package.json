@@ -1,0 +1,62 @@
+{
+  "name": "nest-genesis",
+  "version": "1.0.2",
+  "description": "",
+  "bin": {
+    "genesis": "dist/src/cli/cli.js"
+  },
+  "main": "dist/src/cli/cli.js",
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "build": "tsc",
+    "_prepare": "husky install && husky add .husky/commit-msg && husky add .husky/post-commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enespada/CLI-nest-genesis"
+  },
+  "keywords": [
+    "cli",
+    "genesis",
+    "nest",
+    "architecture",
+    "nestjs architecture",
+    "nestjs"
+  ],
+  "author": {
+    "email": "espada.ep@gmail.com",
+    "name": "Enriuq Espada Calvo",
+    "url": "https://github.com/enespada"
+  },
+  "contributors": [
+    {
+      "email": "sergi_cn96@hotmail.com",
+      "name": "Sergi Calatayud Navarro",
+      "url": "https://github.com/laviida"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/enespada/CLI-nest-genesis#readme",
+  "readme": "https://github.com/enespada/CLI-nest-genesis#readme",
+  "devDependencies": {
+    "@types/figlet": "^1.5.5",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.15.7",
+    "@types/shelljs": "^0.8.11",
+    "rimraf": "^4.4.1",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "commander": "^10.0.0",
+    "figlet": "^1.5.2",
+    "fs-extra": "^11.1.1",
+    "husky": "^8.0.3",
+    "inquirer": "^8.0.0",
+    "ora": "^5.4.1",
+    "shelljs": "^0.8.5"
+  }
+}
